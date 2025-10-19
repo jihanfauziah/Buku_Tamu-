@@ -52,7 +52,7 @@ if(isset($_POST['simpan'])) {
                         <th>Nama Tamu</th>
                         <th>Alamat</th>
                         <th>No. Telepon</th>
-                        <th>Bertemu Dengan</th>
+                        <th class="text-nowrap">Bertemu Dengan</th>
                         <th>Kepentingan</th>
                         <th>Aksi</th>
                     </tr>
@@ -70,7 +70,7 @@ if(isset($_POST['simpan'])) {
                         <td><?= $tamu['no_hp']; ?></td>
                         <td><?= $tamu['bertemu']; ?></td>
                         <td><?= $tamu['kepentingan']; ?></td>
-                        <td><button class="btn btn-success" type="button">Ubah</button>
+                        <td><a class="btn btn-success" href="edit-tamu.php?id<?= $tamu['id_tamu']?>">Ubah</a>
                             <button class="btn btn-danger" type="button">Hapus</button></td>
                     </tr>
                     <?php endforeach; ?>
