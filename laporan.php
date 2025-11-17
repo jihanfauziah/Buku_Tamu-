@@ -4,7 +4,7 @@ require_once('function.php');
 
 if (isset($_POST['tampilkan'])) {
   $p_awal = $_POST['p_awal'];
-  $p_akhit = $_POST['p_akhir'];
+  $p_akhir = $_POST['p_akhir'];
 
   $link = "export-laporan.php?cari=true&p_awal=$p_awal&p_akhir=$p_akhir";
   // query sesuai dengan keyword
