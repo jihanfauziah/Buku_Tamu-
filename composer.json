@@ -5,5 +5,7 @@
             "Rahma\\BukuTamu\\": "src/"
         }
     },
-    "require": {}
+    "require": {
+        "phpoffice/phpspreadsheet": "^5.3"
+    }
 }
